@@ -1,14 +1,13 @@
 # Steel
 ## Status
 ### Package
-[![Upload Python Package](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml)
-
-### Workflows state
+[![Upload of python package](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml)
 [![Dependency Review](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/dependencies.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/dependencies.yml)
 [![Python package](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/package.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/package.yml)
 
-### Code state
 [![CodeQL](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/github-code-scanning/codeql)
+
+### Code state
 [![CodeScene Code Health](https://codescene.io/projects/40877/status-badges/code-health)](https://codescene.io/projects/40877)
 [![CodeScene System Mastery](https://codescene.io/projects/40877/status-badges/system-mastery)](https://codescene.io/projects/40877)
 
