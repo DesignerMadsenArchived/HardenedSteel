@@ -1,15 +1,23 @@
 # Default for all
 * text=auto
 
+# Documentation
 *.md text diff=markdown eol=crlf
+
+# Scripts
 *.sh text diff=sh eol=lf
+*.ps1 text diff=ps1 eol=lf
+
+# Python
 *.py text diff=python eol=lf
 *.ipynb text diff=ipynb eol=lf
 
-
 # Git attributes
-.gitignore text eol=lf
-.gitattributes text eol=lf
+.gitignore text eol=lf export-ignore
+.gitattributes text eol=lf export-ignore
 
+# Workflows
+tests/ export-ignore
 /.github export-ignore
 CHANGELOG.md export-ignore
+
