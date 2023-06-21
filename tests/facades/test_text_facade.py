@@ -1,6 +1,6 @@
 from tests.facades                      \
     import                              \
-    generate_label_by_size,             \
+    generate_lowercase_label_by_size,             \
     generate_uppercase_label_by_size
 
 
@@ -12,7 +12,7 @@ def test() -> None:
 def test_generate_label() -> None:
     size: int = 20
 
-    r_tex: str = generate_label_by_size(size)
+    r_tex: str = generate_lowercase_label_by_size(size)
     print('result-lowercase: ', r_tex)
 
     assert len(r_tex) == size

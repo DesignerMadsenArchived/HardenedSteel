@@ -4,7 +4,7 @@ from steel.facades.texts.characters \
     random_uppercase_letter
 
 
-def generate_label_by_size(
+def generate_lowercase_label_by_size(
         length_of_label: int
 ) -> str:
     r_value: str = ''
