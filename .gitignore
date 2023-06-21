@@ -1,0 +1,13 @@
+# Directories for virtual environments
+.windows/*
+.linux/*
+.environment/*
+.venv/*
+
+# Exclusion of cache files
+*.pyc
+
+
+# editors
+.idea/*
+
