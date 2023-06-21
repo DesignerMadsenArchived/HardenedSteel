@@ -2,10 +2,17 @@ from steel.facades.texts.characters \
     import get_system_random
 
 
+def random_uppercase_letter() -> str:
+    return character_in_range(
+        ord('A'),
+        ord('Z')
+    )
+
+
 def random_lowercase_letter() -> str:
     return character_in_range(
-        97,
-        122
+        ord('a'),
+        ord('z')
     )
 
 
