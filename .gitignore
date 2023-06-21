@@ -11,3 +11,5 @@
 # editors
 .idea/*
 
+*.egg-info/*
+dist/*
