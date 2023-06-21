@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hardened-steel"
-version = "0.0.4-dev"
+version = "0.0.5-dev"
 authors = [
   { name="IO Jægers", email="support@cloud.iojaegers.com" },
   { name="Kent Madsen", email="kent.vejrup.madsen@outlook.com" },
