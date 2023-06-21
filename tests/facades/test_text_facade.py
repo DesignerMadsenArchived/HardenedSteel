@@ -35,3 +35,16 @@ def test_generate_label() -> None:
     print('result_label: ', r_tex)
 
     assert len(r_tex) == size
+
+
+def test_boundary_of_label() -> None:
+    size: int = -200
+    called: bool = False
+
+    try:
+        r_tex: str = generate_label_by_size(size)
+    except Exception as e:
+        print(str(e))
+        called: bool = True
+
+    assert called

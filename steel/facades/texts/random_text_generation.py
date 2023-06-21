@@ -13,7 +13,9 @@ from steel.globals \
     get_zero
 
 
-def boundary_exception(index):
+def detect_outside_boundary_exception(
+        index: int
+):
     raise_out_of_boundary_exception(
         index,
         get_zero(),
@@ -24,7 +26,9 @@ def boundary_exception(index):
 def generate_lowercase_label_by_size(
         length_of_label: int
 ) -> str:
-    boundary_exception(length_of_label)
+    detect_outside_boundary_exception(
+        length_of_label
+    )
     r_value: str = ''
 
     for position                            \
@@ -38,7 +42,9 @@ def generate_lowercase_label_by_size(
 def generate_uppercase_label_by_size(
         length_of_label: int
 ) -> str:
-    boundary_exception(length_of_label)
+    detect_outside_boundary_exception(
+        length_of_label
+    )
     r_value: str = ''
 
     for position                            \
@@ -52,7 +58,9 @@ def generate_uppercase_label_by_size(
 def generate_label_by_size(
         length_of_label: int
 ) -> str:
-    boundary_exception(length_of_label)
+    detect_outside_boundary_exception(
+        length_of_label
+    )
     r_value: str = ''
 
     for position                            \

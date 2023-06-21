@@ -6,4 +6,5 @@ from steel.globals.singletons       \
 from steel.globals.vars             \
     import                          \
     get_maximum_size_of_integer,    \
-    get_zero
+    get_zero,                       \
+    get_minimum_size_of_integer
