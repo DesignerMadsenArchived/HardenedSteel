@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hardened-steel"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="IO Jægers", email="support@cloud.iojaegers.com" },
   { name="Kent Madsen", email="kent.vejrup.madsen@outlook.com" },
@@ -22,3 +22,4 @@ classifiers = [
 "Homepage" = "https://github.com/IO-Jaegers/Steel"
 "Issues" = "https://github.com/IO-Jaegers/Steel/issues"
 "Wiki" = "https://github.com/IO-Jaegers/Steel/wiki"
+"Releases" = "https://pypi.org/manage/project/hardened-steel/releases/"
