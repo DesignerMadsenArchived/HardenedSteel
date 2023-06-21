@@ -3,6 +3,7 @@
 
 # Documentation
 *.md text diff=markdown eol=crlf
+*.toml text diff=toml eol=lf export-ignore
 
 # Scripts
 *.sh text diff=sh eol=lf
