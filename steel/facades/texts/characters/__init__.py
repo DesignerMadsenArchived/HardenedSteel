@@ -4,4 +4,4 @@ from steel.globals                          \
 from steel.facades.texts.characters.ranges  \
     import                                  \
     random_lowercase_letter,                \
-    character_in_range
+    random_uppercase_letter
