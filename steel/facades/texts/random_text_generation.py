@@ -16,6 +16,13 @@ def generate_label_by_size(
     return r_value
 
 
+def generate_uppercase_label_by_size(
+        length_of_label: int
+) -> str:
+    return generate_label_by_size(
+        length_of_label
+    ).upper()
+
 
 
 
