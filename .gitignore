@@ -3,6 +3,7 @@
 .linux/*
 .environment/*
 .venv/*
+.pytest_cache/*
 
 # Exclusion of cache files
 *.pyc
