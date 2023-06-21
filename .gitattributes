@@ -1,26 +1,30 @@
 # Default for all
-* text=auto
+* text=auto eol=lf
 
 # Documentation
 *.md text diff=markdown eol=crlf
-*.toml text diff=toml eol=lf export-ignore
-*.txt text diff=txt eol=lf
+*.toml text diff=toml
+*.txt text diff=txt
 
 # Scripts
-*.sh text diff=sh eol=lf
-*.ps1 text diff=ps1 eol=lf
+*.sh text diff=sh
+*.ps1 text diff=ps1
+
+# file formats
+*.json text diff=json
+*.yml text diff=yml
+*.xml text diff=xml
 
 # Python
-*.py text diff=python eol=lf
-*.ipynb text diff=ipynb eol=lf
+*.py text diff=python
+*.ipynb text diff=ipynb
 
 # Git attributes
-.gitignore text eol=lf diff=gitignore export-ignore
-.gitattributes text eol=lf diff=gitattributes export-ignore
-.gitmodules text eol=lf diff=gitmodules export-ignore
+.gitignore text diff=gitignore export-ignore
+.gitattributes text diff=gitattributes export-ignore
+.gitmodules text diff=gitmodules export-ignore
 
 # Workflows
 tests/ export-ignore
 /.github export-ignore
-CHANGELOG.md export-ignore
-
+pyproject.toml export-ignore
