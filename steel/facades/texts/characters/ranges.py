@@ -8,7 +8,20 @@ ascii_uppercase_begin:  int = ord('A')
 ascii_uppercase_end:    int = ord('Z')
 
 
-def random_uppercase_letter() -> str:
+def random_letter() -> chr:
+    random = get_system_random()
+
+    choose_uppercase: bool = bool(
+        random.getrandbits(1)
+    )
+
+    if choose_uppercase:
+        return random_uppercase_letter()
+    else:
+        return random_lowercase_letter()
+
+
+def random_uppercase_letter() -> chr:
     global                          \
         ascii_uppercase_begin,      \
         ascii_uppercase_end
@@ -19,7 +32,7 @@ def random_uppercase_letter() -> str:
     )
 
 
-def random_lowercase_letter() -> str:
+def random_lowercase_letter() -> chr:
     global                          \
         ascii_lowercase_begin,      \
         ascii_lowercase_end
@@ -33,7 +46,7 @@ def random_lowercase_letter() -> str:
 def character_in_range(
         begin: int,
         end: int
-):
+) -> chr:
     random = get_system_random()
 
     random_number: int = random.randint(
