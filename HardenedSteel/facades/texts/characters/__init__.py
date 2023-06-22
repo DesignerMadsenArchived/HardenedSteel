@@ -7,7 +7,7 @@ from HardenedSteel.facades.booleans                     \
 
 
 from HardenedSteel.facades.texts.characters.ranges      \
-    import                                      \
-    random_lowercase_letter,                    \
-    random_uppercase_letter,                    \
+    import                                              \
+    random_lowercase_letter,                            \
+    random_uppercase_letter,                            \
     random_letter

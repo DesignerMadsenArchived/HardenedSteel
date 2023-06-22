@@ -1,9 +1,9 @@
 from HardenedSteel.globals                          \
-    import                                  \
-    get_minimum_size_of_integer,            \
-    get_maximum_size_of_integer,            \
-    get_zero,                               \
-    get_maximum_size_of_unsigned_integer,   \
+    import                                          \
+    get_minimum_size_of_integer,                    \
+    get_maximum_size_of_integer,                    \
+    get_zero,                                       \
+    get_maximum_size_of_unsigned_integer,           \
     get_system_random
 
 

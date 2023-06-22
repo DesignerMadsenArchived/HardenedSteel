@@ -1,6 +1,6 @@
-from HardenedSteel.facades.booleans \
-    import                  \
-    get_system_random,      \
+from HardenedSteel.facades.booleans                 \
+    import                                          \
+    get_system_random,                              \
     get_one
 
 

@@ -1,15 +1,15 @@
 from HardenedSteel.facades.texts.characters                                 \
-    import                                                          \
-    random_lowercase_letter,                                        \
-    random_uppercase_letter,                                        \
+    import                                                                  \
+    random_lowercase_letter,                                                \
+    random_uppercase_letter,                                                \
     random_letter
 
 from HardenedSteel.facades.texts.exceptions                                 \
     import raise_out_of_boundary_exception
 
 from HardenedSteel.globals                                                  \
-    import                                                          \
-    get_maximum_size_of_integer,                                    \
+    import                                                                  \
+    get_maximum_size_of_integer,                                            \
     get_zero
 
 
@@ -31,7 +31,7 @@ def generate_lowercase_label_by_size(
     )
     r_value: str = ''
 
-    for position                                                    \
+    for position                                                            \
             in range(length_of_label):
 
         r_value = r_value + random_lowercase_letter()
@@ -47,7 +47,7 @@ def generate_uppercase_label_by_size(
     )
     r_value: str = ''
 
-    for position                                                    \
+    for position                                                            \
             in range(length_of_label):
 
         r_value = r_value + random_uppercase_letter()
@@ -63,7 +63,7 @@ def generate_label_by_size(
     )
     r_value: str = ''
 
-    for position                                                    \
+    for position                                                            \
             in range(length_of_label):
         r_value = r_value + random_letter()
 

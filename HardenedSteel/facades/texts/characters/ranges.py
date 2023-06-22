@@ -1,6 +1,6 @@
 from HardenedSteel.facades.texts.characters \
-    import                          \
-    get_system_random,              \
+    import                                  \
+    get_system_random,                      \
     generate_random_boolean
 
 ascii_lowercase_begin:  int = ord('a')
