@@ -5,7 +5,7 @@ from steel.globals                          \
     get_zero,                               \
     get_maximum_size_of_unsigned_integer
 
-from steel.globals \
+from steel.globals                          \
     import get_system_random
 
 
