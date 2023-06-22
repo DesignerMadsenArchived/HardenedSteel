@@ -16,7 +16,7 @@ authors = [
 description = "Framework for helping to test projects with the generation of random data during TDD"
 
 readme = "Readme.md"
-license = "License.md"
+license = {file='License.md'}
 
 classifiers = [
     "Programming Language :: Python :: 3",
