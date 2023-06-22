@@ -1,4 +1,4 @@
-from steel.facades.texts.characters \
+from HardenedSteel.facades.texts.characters \
     import                          \
     get_system_random,              \
     generate_random_boolean

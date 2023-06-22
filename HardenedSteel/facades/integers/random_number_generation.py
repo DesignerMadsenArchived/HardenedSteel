@@ -1,4 +1,4 @@
-from steel.globals                          \
+from HardenedSteel.globals                          \
     import                                  \
     get_minimum_size_of_integer,            \
     get_maximum_size_of_integer,            \

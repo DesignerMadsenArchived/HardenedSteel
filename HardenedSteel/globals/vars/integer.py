@@ -1,4 +1,4 @@
-from steel.globals.vars \
+from HardenedSteel.globals.vars \
     import maxsize
 
 zero: int = 0

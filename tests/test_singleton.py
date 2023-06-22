@@ -1,7 +1,7 @@
 from random \
     import SystemRandom
 
-from steel.globals \
+from HardenedSteel.globals \
     import \
     get_system_random, \
     set_system_random

@@ -1,4 +1,4 @@
-from steel                                  \
+from HardenedSteel                                  \
     import                                  \
     generate_lowercase_label_by_size,       \
     generate_uppercase_label_by_size,       \
@@ -8,7 +8,7 @@ from steel                                  \
     generate_random_boolean
 
 
-from steel.globals                          \
+from HardenedSteel.globals                          \
     import                                  \
     get_maximum_size_of_unsigned_integer,   \
     get_zero,                               \

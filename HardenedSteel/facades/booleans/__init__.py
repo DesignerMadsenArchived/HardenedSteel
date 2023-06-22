@@ -1,7 +1,7 @@
-from steel.globals                                    \
+from HardenedSteel.globals                                    \
     import                                            \
     get_system_random,                                \
     get_one
 
-from steel.facades.booleans.random_boolean_generation \
+from HardenedSteel.facades.booleans.random_boolean_generation \
     import generate_random_boolean

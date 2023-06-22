@@ -1,13 +1,13 @@
-from steel.facades.texts.characters                                 \
+from HardenedSteel.facades.texts.characters                                 \
     import                                                          \
     random_lowercase_letter,                                        \
     random_uppercase_letter,                                        \
     random_letter
 
-from steel.facades.texts.exceptions                                 \
+from HardenedSteel.facades.texts.exceptions                                 \
     import raise_out_of_boundary_exception
 
-from steel.globals                                                  \
+from HardenedSteel.globals                                                  \
     import                                                          \
     get_maximum_size_of_integer,                                    \
     get_zero
