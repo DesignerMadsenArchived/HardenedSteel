@@ -3,15 +3,21 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
+requires-python = ">=3.10"
+
 name = "hardened-steel"
-version = "0.0.6-dev"
+version = "0.0.7"
+
 authors = [
   { name="IO Jægers", email="support@cloud.iojaegers.com" },
   { name="Kent Madsen", email="kent.vejrup.madsen@outlook.com" },
 ]
+
 description = "Framework for helping to test projects with the generation of random data during TDD"
-readme = "README.md"
-requires-python = ">=3.10"
+
+readme = "Readme.md"
+license = "License.md"
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
