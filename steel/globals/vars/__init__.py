@@ -1,9 +1,4 @@
-from steel.globals.singletons               \
-    import                                  \
-    get_system_random,                      \
-    set_system_random
-
-from steel.globals.vars                     \
+from steel.globals.vars.integer             \
     import                                  \
     get_maximum_size_of_integer,            \
     get_zero,                               \
