@@ -1,12 +1,13 @@
-from sys \
+from HardenedSteel.globals.vars \
     import maxsize
+
+zero: int = 0
+one: int = 1
 
 unsigned_max_size: int = 4294967295
 
 integer_max_size: int = maxsize
-integer_min_size: int = -maxsize - 1
-
-zero: int = 0
+integer_min_size: int = -maxsize - one
 
 
 def get_maximum_size_of_unsigned_integer() -> int:
@@ -27,3 +28,8 @@ def get_maximum_size_of_integer() -> int:
 def get_zero() -> int:
     global zero
     return zero
+
+
+def get_one() -> int:
+    global one
+    return one

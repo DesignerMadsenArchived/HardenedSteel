@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "hardened-steel"
-version = "0.0.5-dev"
+version = "0.0.6-dev"
 authors = [
   { name="IO Jægers", email="support@cloud.iojaegers.com" },
   { name="Kent Madsen", email="kent.vejrup.madsen@outlook.com" },
@@ -23,3 +23,10 @@ classifiers = [
 "Issues" = "https://github.com/IO-Jaegers/Steel/issues"
 "Wiki" = "https://github.com/IO-Jaegers/Steel/wiki"
 "Releases" = "https://pypi.org/manage/project/hardened-steel/releases/"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["HardenedSteel*"]
+exclude = ["docs*", "tests*"]
