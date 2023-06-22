@@ -3,10 +3,8 @@ from steel.globals                          \
     get_minimum_size_of_integer,            \
     get_maximum_size_of_integer,            \
     get_zero,                               \
-    get_maximum_size_of_unsigned_integer
-
-from steel.globals                          \
-    import get_system_random
+    get_maximum_size_of_unsigned_integer,   \
+    get_system_random
 
 
 def generate_unsigned_integer(

@@ -1,3 +1,7 @@
+from steel.facades.booleans             \
+    import generate_random_boolean
+
+
 from steel.facades.texts                \
     import                              \
     generate_lowercase_label_by_size,   \
