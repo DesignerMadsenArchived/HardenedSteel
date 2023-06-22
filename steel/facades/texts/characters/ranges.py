@@ -1,5 +1,7 @@
 from steel.facades.texts.characters \
-    import get_system_random
+    import                          \
+    get_system_random,              \
+    generate_random_boolean
 
 ascii_lowercase_begin:  int = ord('a')
 ascii_lowercase_end:    int = ord('z')
@@ -9,11 +11,7 @@ ascii_uppercase_end:    int = ord('Z')
 
 
 def random_letter() -> chr:
-    random = get_system_random()
-
-    choose_uppercase: bool = bool(
-        random.getrandbits(1)
-    )
+    choose_uppercase: bool = generate_random_boolean()
 
     if choose_uppercase:
         return random_uppercase_letter()
