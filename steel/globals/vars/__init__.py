@@ -1,4 +1,4 @@
-from sys \
+from sys                                    \
     import maxsize
 
 from steel.globals.vars.integer             \
