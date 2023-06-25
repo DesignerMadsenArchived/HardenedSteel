@@ -195,15 +195,37 @@ class CounterObject:
             self,
             other
     ) -> bool:
-        compare_to: CounterObject = other
-        return self.get_value() < compare_to.get_value()
+        if is_instance_of_counter_object(
+            other
+        ):
+            compare_to: CounterObject = other
+            return self.get_value() < compare_to.get_value()
+        
+        if is_instance_of_integer(
+            other
+        ):
+            compare_to: int = other
+            return self.get_value() < compare_to
+
+        return False
 
     def __gt__(
             self,
             other
     ) -> bool:
-        compare_to: CounterObject = other
-        return self.get_value() > compare_to.get_value()
+        if is_instance_of_counter_object(
+            other
+        ):
+            compare_to: CounterObject = other
+            return self.get_value() > compare_to.get_value()
+        
+        if is_instance_of_integer(
+            other
+        ):
+            compare_to: int = other
+            return self.get_value() > compare_to
+        
+        return False
 
     def __add__(
             self,
