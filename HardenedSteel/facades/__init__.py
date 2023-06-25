@@ -20,4 +20,7 @@ from HardenedSteel.facades.integers             \
     is_integer_zero
 
 from HardenedSteel.facades.types                \
-    import is_instance_of_integer
+    import                                      \
+    is_instance_of_integer,                     \
+    is_instance_of_float,                       \
+    is_instance_of_string
