@@ -1,7 +1,7 @@
 from HardenedSteel.globals                      \
     import                                      \
     get_system_random,                          \
-    get_one,                                    \
+    get_integer_one,                                    \
     get_conversion_of_a_byte_to_bits
 
 
@@ -9,7 +9,7 @@ def generate_random_bit() -> int:
     random = get_system_random()
 
     return random.getrandbits(
-        get_one()
+        get_integer_one()
     )
 
 
@@ -31,5 +31,3 @@ def generate_random_bytes(
     return random.randbytes(
         size
     )
-
-

@@ -10,7 +10,7 @@ from HardenedSteel.facades.texts.exceptions                                 \
 from HardenedSteel.globals                                                  \
     import                                                                  \
     get_maximum_size_of_integer,                                            \
-    get_zero
+    get_integer_zero
 
 
 def detect_outside_boundary_exception(
@@ -18,7 +18,7 @@ def detect_outside_boundary_exception(
 ):
     raise_out_of_boundary_exception(
         index,
-        get_zero(),
+        get_integer_zero(),
         get_maximum_size_of_integer()
     )
 
