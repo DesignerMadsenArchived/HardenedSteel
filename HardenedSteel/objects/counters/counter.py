@@ -4,32 +4,65 @@ from HardenedSteel.objects.counters     \
     get_integer_zero,                   \
     get_integer_one,                    \
     is_integer_zero,                    \
-    is_instance_of_integer
+    is_instance_of_integer,             \
+    Limit
 
 
 class CounterObject:
     def __init__(
             self,
             start_value: int = get_integer_zero(),
-            move_by: int = get_integer_one()
+            move_by: int = get_integer_one(),
+            limit: Limit | None = None
     ):
         self.value: int = start_value
         self.move: int = move_by
 
+        self.limit: Limit | None = limit
+        self.incremental: bool = True
+
     def __del__(self):
-        del \
+        del             \
             self.value, \
-            self.move
+            self.move,  \
+            self.limit
+
+    def is_incremental(self) -> bool:
+        return self.incremental
+
+    def set_is_incremental(
+            self,
+            value: bool
+    ) -> None:
+        self.incremental = value
 
     def __iter__(self) -> iter:
         self.reset()
         return self
 
+    def step(self) -> int:
+        if self.is_incremental():
+            self.increment()
+        else:
+            self.decrement()
+
+        return self.get_value()
+
+    def __call_move__(self):
+        if self.has_no_limit():
+            self.step()
+        else:
+            if self.get_limit().is_within_range(
+                self.get_value()
+            ):
+                self.step()
+            else:
+                raise StopIteration
+
+        return self.get_value()
+
     def __next__(self) -> int:
-        self.increment()
-        return int(
-            self
-        )
+        return self.__call_move__()
 
     def reset(self):
         self.set_value(
@@ -45,10 +78,10 @@ class CounterObject:
     def project_increase(
             self,
             by_value: int
-    ):
+    ) -> int:
         return self.get_value() + by_value
 
-    def project_increment(self):
+    def project_increment(self) -> int:
         return self.project_increase(
             get_integer_one()
         )
@@ -56,13 +89,33 @@ class CounterObject:
     def project_decrease(
             self,
             by_value: int
-    ):
+    ) -> int:
         return self.get_value() - by_value
 
     def project_decrement(self) -> int:
         return self.project_decrease(
             get_integer_one()
         )
+
+    def get_limit(self) -> Limit | None:
+        return self.limit
+
+    def set_limit(
+            self,
+            value: Limit | None
+    ) -> None:
+        self.limit = value
+
+    def remove_limit(self):
+        self.set_limit(
+            None
+        )
+
+    def has_limit(self) -> bool:
+        return not self.has_no_limit()
+
+    def has_no_limit(self) -> bool:
+        return self.limit is None
 
     def get_move_size(self) -> int:
         return self.move
