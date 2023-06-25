@@ -3,6 +3,14 @@ from HardenedSteel.globals.vars \
 
 zero: int = 0
 one: int = 1
+two: int = 2
+three: int = 3
+four: int = 4
+five: int = 5
+six: int = 6
+seven: int = 7
+eight: int = 8
+nine: int = 9
 
 unsigned_max_size: int = 4294967295
 
@@ -25,11 +33,11 @@ def get_maximum_size_of_integer() -> int:
     return integer_max_size
 
 
-def get_zero() -> int:
+def get_integer_zero() -> int:
     global zero
     return zero
 
 
-def get_one() -> int:
+def get_integer_one() -> int:
     global one
     return one

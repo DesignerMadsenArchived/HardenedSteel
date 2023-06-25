@@ -1,14 +1,8 @@
-from HardenedSteel.facades.booleans                 \
-    import                                          \
-    get_system_random,                              \
-    get_one
+from HardenedSteel.facades \
+    import generate_random_bit
 
 
 def generate_random_boolean() -> bool:
-    random = get_system_random()
-    
     return bool(
-        random.getrandbits(
-            get_one()
-        )
+        generate_random_bit()
     )
