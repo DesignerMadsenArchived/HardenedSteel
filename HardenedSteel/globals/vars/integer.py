@@ -41,3 +41,39 @@ def get_integer_zero() -> int:
 def get_integer_one() -> int:
     global one
     return one
+
+
+def get_integer_two() -> int:
+    global two
+    return two
+
+
+def get_integer_three() -> int:
+    global three
+    return three
+
+
+def get_integer_four() -> int:
+    global four
+    return four
+
+
+def get_integer_six() -> int:
+    global six
+    return six
+
+
+def get_integer_seven() -> int:
+    global seven
+    return seven
+
+
+def get_integer_eight() -> int:
+    global eight
+    return eight
+
+
+def get_integer_nine() -> int:
+    global nine
+    return nine
+
