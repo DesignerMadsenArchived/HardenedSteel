@@ -1,4 +1,4 @@
-from random                                             \
+from random                 \
     import SystemRandom
 
 singleton_system_random: SystemRandom | None = None

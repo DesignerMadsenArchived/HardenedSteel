@@ -1,7 +1,3 @@
-from HardenedSteel.globals                              \
-    import get_system_random
-
-
 from HardenedSteel.facades.booleans                     \
     import generate_random_boolean
 

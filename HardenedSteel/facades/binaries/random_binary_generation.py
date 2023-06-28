@@ -1,7 +1,9 @@
+from HardenedSteel.configuration                \
+    import get_system_random
+
 from HardenedSteel.globals                      \
     import                                      \
-    get_system_random,                          \
-    get_integer_one,                                    \
+    get_integer_one,                            \
     get_conversion_of_a_byte_to_bits
 
 
