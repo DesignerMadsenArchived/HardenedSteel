@@ -1,4 +1,4 @@
-from HardenedSteel.globals.vars \
+from sys            \
     import maxsize
 
 zero: int = 0
@@ -56,6 +56,11 @@ def get_integer_three() -> int:
 def get_integer_four() -> int:
     global four
     return four
+
+
+def get_integer_five() -> int:
+    global five
+    return five
 
 
 def get_integer_six() -> int:
