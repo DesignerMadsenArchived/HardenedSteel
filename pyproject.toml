@@ -6,7 +6,6 @@ build-backend = "setuptools.build_meta"
 requires-python = ">=3.10"
 
 name = "hardened-steel"
-version = "0.0.10"
 
 authors = [
   { name="IO Jægers", email="support@cloud.iojaegers.com" },
@@ -15,7 +14,7 @@ authors = [
 
 description = "Framework for helping to test projects with the generation of random data during TDD"
 
-readme = "Readme.md"
+readme = {file='Readme.md', content-type='text/markdown'}
 license = {file='License.md'}
 
 classifiers = [
@@ -23,6 +22,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+dynamic = ['version']
 
 [project.urls]
 "Homepage" = "https://github.com/IO-Jaegers/Steel"
@@ -32,6 +33,9 @@ classifiers = [
 
 [tool.setuptools]
 include-package-data = false
+
+[tool.setuptools.dynamic]
+readme = { file = [ 'Readme.md' ] }
 
 [tool.setuptools.packages.find]
 include = ["HardenedSteel*"]
